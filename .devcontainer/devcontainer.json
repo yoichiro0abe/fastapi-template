@@ -1,5 +1,5 @@
 {
-	"name": "firstapi-template",
+	"name": "fastapi-template",
 	"build": {
 		"dockerfile": "Dockerfile"
 	},
