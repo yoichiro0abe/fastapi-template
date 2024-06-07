@@ -6,7 +6,7 @@ FROM python:3.11.9-slim-bullseye
 # 必要なパッケージ　RUNコマンドを一つに結合
 RUN apt update && \
     apt -y upgrade && \
-    apt -y install libopencv-dev
+    apt -y install git
 
 # pipのアップグレードとpoetryのインストール
 RUN pip install --upgrade pip && \
