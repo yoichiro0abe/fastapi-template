@@ -20,3 +20,4 @@ RUN pip install --upgrade pip && \
 # COPY pyproject.toml poetry.lock ./
 # RUN poetry install --no-root
 RUN poetry config virtualenvs.create false
+poetry add fastapi
