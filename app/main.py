@@ -1,4 +1,5 @@
 from typing import Union
+import os
 
 from fastapi import FastAPI
 
@@ -10,7 +11,8 @@ def read_root():
     import datetime
 
     now = datetime.datetime.now()
-    return {"Hello": "World" if now.second % 5 != 0 else "bingo"}
+    api_key = os.getenv("API_KEY")
+    return {"Hello": "World", "now": now, "api_key": api_key}
     # return {"Hello": "World111"}
 
 

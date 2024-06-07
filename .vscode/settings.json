@@ -5,7 +5,7 @@
             "type": "AcrDockerBuildRequest",
             "dockerfilePath": "Dockerfile",
             "srcPath": ".",
-            "envPath": "",
+            "envPath": ".env",
             "resourceGroup": "container-env2024",
             "containerApp": "fastapisample",
             "containerRegistry": "fastapicontainerregi"
