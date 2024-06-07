@@ -6,7 +6,7 @@ FROM python:3.11.9-slim-bullseye
 # 必要なパッケージ　RUNコマンドを一つに結合
 RUN apt update && \
     apt -y upgrade && \
-    apt -y install git
+    apt -y install ca-certificates git
 
 # pipのアップグレードとpoetryのインストール
 RUN pip install --upgrade pip && \
@@ -17,4 +17,6 @@ RUN pip install --upgrade pip && \
 # WORKDIR /workspace/app
 
 # 仮想環境を作らないよう設定
+# COPY pyproject.toml poetry.lock ./
+# RUN poetry install --no-root
 RUN poetry config virtualenvs.create false

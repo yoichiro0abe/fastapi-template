@@ -14,7 +14,10 @@
 		"vscode": {
 			"extensions": [
 				"ms-python.python",
-				"njpwerner.autodocstring"
+				"njpwerner.autodocstring",
+				"ms-python.flake8",
+				"ms-python.black-formatter",
+				"ms-python.isort"
 			]
 		}
 	}
