@@ -19,6 +19,6 @@ RUN pip install --upgrade pip && \
 # 仮想環境を作らないよう設定
 # COPY pyproject.toml poetry.lock ./
 # RUN poetry install --no-root
-RUN poetry config virtualenvs.create false
-RUN poetry init --no-interaction
-RUN poetry add fastapi
+# RUN poetry config virtualenvs.create false
+# RUN poetry init --no-interaction
+# RUN poetry add fastapi
