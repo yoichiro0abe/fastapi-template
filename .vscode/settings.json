@@ -1,14 +1,14 @@
 {
     "containerApps.deploymentConfigurations": [
         {
-            "label": "fastapisample",
+            "label": "fastapi-template",
             "type": "AcrDockerBuildRequest",
             "dockerfilePath": "Dockerfile",
             "srcPath": ".",
             "envPath": ".env",
-            "resourceGroup": "container-env2024",
-            "containerApp": "fastapisample",
-            "containerRegistry": "fastapicontainerregi"
+            "resourceGroup": "fastapisample",
+            "containerApp": "fastapi-template",
+            "containerRegistry": "fastapisample62a3cd"
         }
     ],
     "[python]": {
